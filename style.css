@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COLORS 
+
+light-blue  rgb(222, 228, 248)
+dark grey   rgb(44, 43, 43)
+
+*/
+
+/* NAVIGATION */
+
+nav {
+    background-color: #555;
+}
+
+#navigation-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 100px;
+    padding: 0 30px;
+
+}
+
+#navigation-list li img {
+    height: 70px;
+    position: relative;
+    top: 12px;
+        
+
+}
+
+#navigation-list li a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(222, 228, 248);
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+#navigation-list li input {
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    position: relative;
+    padding-left: 35px;
+    padding-top: 5px;
+
+}
+
+#navigation-list #more {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px 55px 15px 20px;
+    background-color: rgb(44, 43, 43);
+    position: relative;
+    
+}
+
+#navigation-list #more img {
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    padding-left: 15px;
+}
+#navigation-list li i {
+    color: #555;
+    font-size: 25px;
+    position: absolute;
+    right: 400px;
+    top: 38px;
+}
+
+#navigation-list li input::placeholder {
+    color:#555;
+    font-size: 20px;
+}
+
+/* LANGUAGES */
+
+#languages {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    overflow: scroll;
+    list-style: none;
+    padding: 10px 0 10px 37px;
+    background: rgb(222, 228, 248);
+    box-shadow: 0px 5px 5px 0px rgba(156, 156, 156, 0.5);
+}
+
+#languages li {
+    flex-shrink: 0;
+}
+#languages li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    border: 1px solid #555;
+    background-color: rgb(194, 191, 191);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+/* MAIN */
+
+#main {
+    padding: 90px 90px;
+    display: flex;
+}
+
+
+#article-list {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 80px 30px 20px;
+}
+
+#article-one {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+#article-header {
+    display: flex;
+    padding-bottom: 30px;
+}
+#article-header div {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#article-header img {
+    width: 170px;
+    height: auto;
+    border: 10px solid rgb(27, 172, 240);
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(159,163,171,1);
+}
+
+.categories #article-poster {
+    font-weight: bold;
+    color: rgb(27, 172, 240);
+    font-size: 20px;
+}
+
+#article-header i {
+    color: #555;
+}
+#article-header h2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+}
+.categories {
+    color: #555;
+    padding-bottom: 20px;
+}
+
+.categories a {
+    color: #555;
+    font-weight: bold;
+    font-size: 20px;
+}
+#article-one > p {
+    color: rgb(54, 54, 54);
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+#article-one p:last-child a {
+    color: rgb(27, 172, 240);
+}
+
+#article-two {
+    display: flex;
+    padding-bottom: 60px;
+}
+#article-two img {
+    width: 140px;
+    height: auto;
+    border: 10px solid rgb(27, 172, 240);
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(159,163,171,1);
+}
+
+#article-two div {
+    padding-left: 30px;
+}
+
+#article-two h2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    
+}
+
+#article-three {
+    display: flex;
+    padding-bottom: 30px;
+
+}
+
+#article-three img {
+    width: 140px;
+    height: auto;
+    border: 10px solid rgb(27, 172, 240);
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(159,163,171,1);
+     
+}
+
+#article-three div {
+    padding-left: 20px;
+}
+
+#article-three h2 a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 33px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#email-aside {
+    padding-right: 70px;
+}
+
+
+
+
+
+
+#email-aside img {
+    width: 200px;
+    height: auto;
+}
