@@ -36,9 +36,15 @@ nav {
     display: inline-block;
     text-decoration: none;
     color: rgb(222, 228, 248);
-    padding: 0 30px;
+    padding: 10px 30px;
     font-size: 20px;
     font-weight: 600;
+    border-radius: 10px;
+}
+
+#navigation-list li a:hover,
+#navigation-list li a:active {
+    background-color: rgb(63, 62, 62);
 }
 
 #navigation-list li input {
@@ -54,8 +60,13 @@ nav {
     border-radius: 5px;
     display: inline-block;
     padding: 15px 55px 15px 20px;
-    background-color: rgb(44, 43, 43);
+    background-color: rgb(63, 62, 62);
     position: relative;
+}
+
+#navigation-list #more:hover,
+#navigation-list #more:active {
+    background-color: rgb(32, 32, 32);
 }
 
 #navigation-list #more img {
@@ -99,11 +110,16 @@ nav {
     display: inline-block;
     text-decoration: none;
     color: #555;
-    border: 1px solid #555;
+    border: 1px solid rgb(168, 168, 168);
     background-color: rgb(194, 191, 191);
     border-radius: 5px;
     padding: 5px 10px;
     font-weight: bold;
+}
+
+#languages li a:hover,
+#languages li a:active {
+    border: 1px solid #555;
 }
 
 /* MAIN */
@@ -418,6 +434,11 @@ nav {
     border-bottom: 4px solid rgb(27, 172, 240);
 }
 
+#guides div>a:hover,
+#guides div>a:active {
+    color: rgb(27, 172, 240);
+}
+
 #in-and-outside {
     text-align: initial;
     display: flex;
@@ -457,6 +478,11 @@ nav {
     font-size: 35px;
 }
 
+#all-guides h2 a:hover,
+#all-guides h2 a:active {
+    color: rgb(27, 172, 240);
+}
+
 #all-guides #article-one {
     padding-right: 30px;
 }
@@ -468,6 +494,9 @@ nav {
 
 #all-guides #article-one>p:last-of-type a {
     color: #555;
+}
+#all-guides #article-one>p:last-of-type i {
+    color: rgb(27, 172, 240);
 }
 
 #all-guides #article-one>p:last-of-type {
@@ -487,6 +516,26 @@ nav {
 #all-guides #article-one .categories a {
     color: rgb(27, 172, 240);
 }
+
+
+
+/* SMASHING FAMILY*/
+
+#smashing-family {
+    margin-bottom: 70px;
+}
+
+#smashing-family h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#smashing-family h3 {
+    text-align: center;
+    color: rgb(27, 172, 240);
+    font-size: 35px;
+}
+
 
 /* JOIN */
 
@@ -552,6 +601,11 @@ nav {
     padding: 0 10px 0 10px;
     line-height: 40px;
     color: #fff;
+}
+
+.k-link:hover,
+.k-link:active {
+    background-color: rgb(27, 172, 240);
 }
 
 #join>a::before {
@@ -646,6 +700,11 @@ nav {
     color: #555;
     text-decoration: none;
     border-bottom: 4px solid rgb(27, 172, 240);
+}
+
+.see-more>a:hover,
+.see-more>a:active {
+    color: rgb(27, 172, 240);
 }
 
 /* CAT GUIDES */
@@ -848,6 +907,11 @@ nav {
     justify-content: left;
 }
 
+#persons .all-persons #article-one #article-header div h2 a:hover,
+#persons .all-persons #article-one #article-header div h2 a:active {
+    color: rgb(27, 172, 240);
+}
+
 #persons .all-persons #article-one #article-header div p {
     padding-bottom: 20px;
 }
@@ -878,15 +942,14 @@ footer {
     background-color: #555;
 }
 
-footer > h2 {
+footer>h2 {
     text-align: center;
     padding: 50px;
     color: #fff;
     font-size: 20px;
 }
 
-
-footer > ul {
+footer>ul {
     text-align: center;
     display: flex;
     width: 100%;
@@ -894,22 +957,28 @@ footer > ul {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    padding-bottom: 70px;list-style: none;
+    padding-bottom: 70px;
+    list-style: none;
 }
 
-footer > ul li a {
+footer>ul li a {
     display: inline-block;
     font-size: 22px;
     color: #fff;
-
+    text-decoration: none;
 }
 
-footer > ul li::before {
-    content: "\2022"; 
+footer>ul li a:hover,
+footer>ul li a:active {
+    color: rgb(27, 172, 240);
+}
+
+footer>ul li::before {
+    content: "\2022";
     color: rgb(177, 170, 170);
-    font-weight: bold; 
-    display: inline-block; 
-    width: 1em; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
     margin-left: -1em;
 }
 
@@ -933,7 +1002,6 @@ footer > ul li::before {
     display: flex;
     flex-direction: column;
     padding: 0 100px;
-    
 }
 
 #contact div ul {
@@ -944,6 +1012,7 @@ footer > ul li::before {
     list-style: none;
     padding-bottom: 60px;
 }
+
 #contact div ul li {
     position: relative;
 }
@@ -954,7 +1023,6 @@ footer > ul li::before {
     font-size: 16px;
     color: #fff;
 }
-
 
 #contact div ul li a {
     color: #fff;
