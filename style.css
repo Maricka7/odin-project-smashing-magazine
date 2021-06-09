@@ -472,6 +472,12 @@ nav {
     border-radius: 15px;
     width: 100px;
     height: 100px;
+    transition: all 0.3s ease-in;
+}
+
+#all-guides #article-one img:hover,
+#all-guides #article-one img:active {
+    transform: scale(1.3);
 }
 
 #all-guides h2 a {
@@ -791,7 +797,15 @@ nav {
 
 #boost-your-skills img {
     width: 900px;
+
 }
+
+#boost-your-skills img:hover,
+#boost-your-skills img:active {
+    -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+}
+
 
 #boost-your-skills>p:first-of-type {
     color: #fff;
