@@ -1,0 +1,90 @@
+#guides {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px 80px 20px;
+    div > a {
+        display: inline-block;
+        font-size: 20px;
+        color: $grey;
+        text-decoration: none;
+        border-bottom: 4px solid $blue; 
+    }
+    div > a:hover,
+    div > a:active {
+        color: $blue;
+    }
+    & > div:first-of-type {
+        text-align: center;
+        margin-bottom: 120px;
+    }
+}
+#in-and-outside {
+    text-align: initial;
+    display: flex;
+    gap: 20px;
+    h4 {
+        width: 2%;
+        writing-mode: tb;
+        text-align: start;
+        position: relative; 
+        span {
+            height: 60px;
+            border-right: 2px solid #000;
+            display: inline-block;
+            margin-bottom: 5px; 
+        }
+    }
+}
+
+#all-guides {
+    padding-left: 20px;
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 30px;
+    h2 a {
+        font-size: 35px; 
+    }
+    h2 a:hover,
+    h2 a:active {
+        color: $blue;
+    }
+    
+    #article-one {
+        padding-right: 30px; 
+        .categories {
+            padding-bottom: 30px;
+            a {
+                color: $blue; 
+            }
+        }
+        #article-poster {
+            color: $blue;
+            padding-bottom: 30px;
+        }
+        & p:last-of-type {
+            font-size: 15px;
+            a {
+                color: $grey;
+            }
+            i {
+                color: $light-blue;  
+            }
+        }
+        & > p:first-of-type {
+            padding-left: 130px;
+            padding-bottom: 100px;
+        }
+        img {
+            border: 10px solid $blue;
+            border-radius: 15px;
+            width: 100px;
+            height: 100px;
+            transition: all 0.3s ease-in;
+        }
+        img:hover,
+        img:active {
+            transform: scale(1.3); 
+        }
+    }
+}

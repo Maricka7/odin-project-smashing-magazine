@@ -1,0 +1,197 @@
+#main {
+    padding: 90px 20px 0 90px;
+    display: flex;
+}
+#article-list {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 30px 0;
+    margin-right: 60px;
+}
+#article-one {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    & > p {
+        color: $dark-grey;
+        font-size: 22px;
+        padding-bottom: 30px;
+        a {
+            color: $blue;
+            font-weight: bold;  
+        }
+    }
+    #article-header {
+        display: flex;
+        padding-bottom: 30px;
+        h2 a {
+            text-decoration: none;
+            color: black;
+            font-size: 35px;  
+        }
+        .categories {
+            padding-bottom: 0;
+            color: $grey;
+            padding-bottom: 20px;
+            a {
+                color: $grey;
+                font-weight: bold;
+                font-size: 20px;  
+            }
+            #article-poster {
+                font-weight: bold;
+                color: $blue;
+                font-size: 20px;
+            }
+        }
+        i {
+            color: $grey; 
+        }
+        div {
+            padding-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+        }
+        img {
+            width: 170px;
+            height: auto;
+            border: 10px solid $blue;
+            border-radius: 5px;
+            box-shadow: 10px 10px 5px 0px rgba(159, 163, 171, 1); 
+        }
+    }
+}
+
+#article-two {
+    display: flex;
+    padding-bottom: 60px;
+    span {
+        color: $grey;
+    }
+    #article-poster {
+        font-weight: bold;
+        color: $blue;
+        font-size: 20px;
+    }
+    h2 a {
+        text-decoration: none;
+        color: black;
+        font-size: 35px;  
+    }
+    img {
+        width: 140px;
+        height: auto;
+        border: 10px solid $blue;
+        border-radius: 5px;
+        box-shadow: 10px 10px 5px 0px rgba(159, 163, 171, 1);  
+    }
+    div {
+        padding-left: 30px; 
+    }
+    a {
+        color: $grey;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+#article-three {
+    display: flex;
+    padding-bottom: 30px;
+    span {
+        color: $grey;
+    }
+    #article-poster {
+        font-weight: bold;
+        color: $blue;
+        font-size: 20px;
+    }
+    h2 a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-size: 33px;
+    }
+    a {
+        color: $grey;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    div {
+        padding-left: 20px;
+    }
+    img {
+        width: 140px;
+        height: auto;
+        border: 10px solid $blue;
+        border-radius: 5px;
+        box-shadow: 10px 10px 5px 0px rgba(159, 163, 171, 1); 
+    }
+}
+
+#email-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 160px 60px 0 60px;
+    background-color: $lighter-blue;
+    text-align: center;
+    margin: 120px 80px 120px 80px;
+    border: 1px solid $lighter-blue;
+    border-radius: 15px;
+    position: relative;
+    p:last-of-type {
+        font-size: 15px;
+        color: $grey;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+    div {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    input {
+        width: 70%;
+        padding: 25px 15px 25px 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border: transparent;
+    }
+    button {
+        width: 30%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: transparent;
+        background-color: rgb(47, 124, 240);
+    }
+    img {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        top: -150px;
+        left: 80px; 
+    }
+    h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .email-newsletter a {
+        display: inline-block;
+        background-color: #fff;
+        padding: 13px 22px 13px 22px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        text-decoration: none;
+        font-size: 27px;
+        font-weight: bold;
+        color: $blue;
+    }
+    .description-newsletter {
+        font-size: 20px;
+        margin-bottom: 20px;
+        a {
+            color: $blue;
+            font-weight: bold;  
+        }
+    }
+}

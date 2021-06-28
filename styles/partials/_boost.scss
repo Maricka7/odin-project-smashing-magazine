@@ -1,0 +1,44 @@
+#boost-your-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1b71bb;
+    padding: 50px 50px;
+    h2 a {
+        display: inline-block;
+        font-size: 50px;
+        color: #fff;
+        text-decoration-color: rgb(163, 212, 245);
+        padding-bottom: 60px;
+    }
+    & > a {
+        background-color: #fff;
+        color: #1b71bb;
+        font-size: 25px;
+        padding: 15px 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-bottom: 50px; 
+    }
+    & > p:first-of-type {
+        color: #fff;
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    & > p:last-of-type {
+        font-size: 25px;
+        color: #fff;
+        padding: 0 270px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    img {
+        width: 900px;
+    }
+    img:hover,
+    img:active {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+}

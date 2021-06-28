@@ -1,0 +1,55 @@
+#cat-guides #join {
+    display: grid;
+    grid-template-columns: repeat(5, 500px);
+    gap: 30px;
+    margin: 0 90px 40px 90px;
+    padding-left: 0;
+    padding-top: 150px;
+    overflow-x: scroll;
+    .one {
+        background-color: rgb(235, 232, 232);
+    }
+    .two {
+        background-color: rgb(243, 187, 187);
+        a {
+            background-color: rgb(194, 23, 23); 
+        }
+    }
+    .three {
+        background-color: rgb(218, 220, 245);
+        a {
+            background-color: rgb(10, 10, 223); 
+        }
+    }
+    .four a {
+        background-color: rgb(11, 192, 11);
+    }
+    .five {
+        background-color: rgb(248, 207, 160);
+        a {
+            background-color: rgb(211, 64, 64); 
+        }
+    }
+    #join-community {
+        margin: 0;
+        & > a {
+            font-size: 20px;  
+        }
+        & > p:first-of-type {
+            font-size: 17px;
+        }
+    }
+}
+#cat-guides #join::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+#cat-guides #join::-webkit-scrollbar-thumb {
+    border: 1px solid #a9a9a9;
+    border-radius: 11px;
+    background: #a5a5a5;
+    background: linear-gradient(90deg, #bbb 0, #a5a5a5 50%, #bbb 100%);
+}
+#cat-guides #join::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #fff 0, #ddfbee 10%, #caedfb 30%, #fdcfca 50%, #cefdd3 70%, #f7fbca 100%);
+}
