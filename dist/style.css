@@ -282,7 +282,7 @@ nav {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -160px;
+  top: -23%;
 }
 #email-aside h2 {
   font-size: 30px;
@@ -536,7 +536,7 @@ nav {
   width: 300px;
   height: auto;
   position: absolute;
-  top: -135px;
+  top: -23%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1330,6 +1330,181 @@ footer #contact .footer-img-bird {
   }
   footer #contact p i {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #languages {
+    padding: 10px 0 10px 10px;
+    gap: 25px;
+  }
+
+  #main #article-list {
+    margin-right: 0;
+  }
+  #main #article-list #article-one > p {
+    font-size: 18px;
+    padding-bottom: 0;
+  }
+  #main #article-list #article-one #article-header {
+    flex-direction: column;
+  }
+  #main #article-list #article-one #article-header img {
+    margin-bottom: 30px;
+  }
+  #main #article-list #article-one #article-header div {
+    padding-left: 0;
+  }
+  #main #article-list #article-one #article-header div h2 a {
+    font-size: 34px;
+  }
+  #main #article-list #article-two {
+    padding-bottom: 30px;
+  }
+  #main #article-list #article-two,
+#main #article-list #article-three {
+    flex-direction: column;
+  }
+  #main #article-list #article-two h2 a,
+#main #article-list #article-three h2 a {
+    font-size: 28px;
+  }
+  #main #article-list #article-two #article-poster,
+#main #article-list #article-two a,
+#main #article-list #article-three #article-poster,
+#main #article-list #article-three a {
+    font-size: 18px;
+  }
+  #main #article-list #article-two p,
+#main #article-list #article-three p {
+    padding-bottom: 10px;
+  }
+  #main #article-list #article-two img,
+#main #article-list #article-three img {
+    margin-bottom: 30px;
+    width: 130px;
+  }
+  #main #article-list #article-two div,
+#main #article-list #article-three div {
+    padding-left: 0;
+  }
+  #main #email-aside {
+    width: 100%;
+    padding-top: 100px;
+  }
+  #main #email-aside img {
+    width: 240px;
+  }
+  #main #email-aside .email-newsletter a {
+    font-size: 24px;
+  }
+  #main #email-aside h2 {
+    font-size: 28px;
+  }
+  #main #email-aside .description-newsletter {
+    font-size: 18px;
+  }
+
+  #explore {
+    padding: 0 10px;
+  }
+  #explore > #first-explore, #explore > #second-explore, #explore > #third-explore {
+    width: 100%;
+  }
+
+  #guides > div:first-of-type {
+    margin-bottom: 80px;
+  }
+
+  #all-guides #article-one > p:first-of-type {
+    padding-left: 0;
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  #all-guides #article-one > p:last-of-type {
+    padding-left: 0;
+    line-height: 1em;
+  }
+  #all-guides #article-one #article-header {
+    position: relative;
+  }
+  #all-guides #article-one #article-header div .categories {
+    position: absolute;
+    top: 12px;
+    left: 100px;
+  }
+  #all-guides #article-one #article-header div h2 a {
+    position: absolute;
+    top: 75px;
+    left: 0;
+  }
+
+  #join #join-community {
+    margin: 0;
+    width: 100%;
+    padding-top: 120px;
+  }
+  #join #join-community img {
+    width: 240px;
+  }
+
+  #cat-guides #join {
+    margin: 0 20px;
+    grid-template-columns: repeat(5, 500px);
+  }
+
+  #persons {
+    padding: 70px 80px 0 40px;
+  }
+  #persons .all-persons #article-one > p {
+    padding-left: 0;
+    line-height: 1em;
+    padding-top: 40px;
+  }
+  #persons .all-persons #article-one #article-header {
+    position: relative;
+  }
+  #persons .all-persons #article-one #article-header h2 a {
+    position: absolute;
+    top: 75px;
+    left: 0;
+  }
+  #persons .all-persons #article-one #article-header .categories {
+    position: absolute;
+    top: 12px;
+    left: 100px;
+  }
+  #persons .person-of-the-week {
+    flex-direction: column;
+  }
+  #persons .person-of-the-week img {
+    width: 210px;
+    height: 210px;
+    margin-bottom: 20px;
+  }
+  #persons .person-of-the-week p {
+    line-height: 22px;
+    font-size: 18px;
+  }
+
+  footer > ul {
+    gap: 0;
+    padding: 0 150px 50px 50px;
+    height: 580px;
+  }
+  footer > ul li {
+    padding: 0 120px 13px 0;
+  }
+  footer #contact {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 0;
+  }
+  footer #contact .footer-img-cat-in-cage {
+    width: 180px;
+    height: auto;
+  }
+  footer #contact div {
+    padding: 0 80px;
   }
 }
 

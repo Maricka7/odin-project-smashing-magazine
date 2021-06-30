@@ -443,6 +443,207 @@
         }
     }
     
-}    
+}   
+
+@media screen and (max-width: 550px) {
+    #languages {
+        padding: 10px 0 10px 10px;
+        gap: 25px;
+    }
+    #main {
+        #article-list {
+            margin-right: 0;
+            #article-one {
+                & > p {
+                    font-size: 18px;
+                    padding-bottom: 0;
+                }
+                #article-header {
+                    flex-direction: column;
+                    img {
+                        margin-bottom: 30px;
+                    }
+                    div {
+                        padding-left: 0;
+                        h2 a {
+                            font-size: 34px;
+                        }
+                    }
+                }
+            }
+            #article-two {
+                padding-bottom: 30px;
+            }
+            #article-two,
+            #article-three {
+                flex-direction: column;
+                h2 a {
+                    font-size: 28px;
+                }
+                #article-poster,
+                a {
+                    font-size: 18px;
+                }
+                p {
+                    padding-bottom: 10px;
+                }
+                img {
+                    margin-bottom: 30px;
+                    width: 130px;
+                }
+                div {
+                    padding-left: 0;
+                }
+            }
+
+        }
+        #email-aside {
+            width: 100%;
+            padding-top: 100px;
+            img {
+                width: 240px;
+            }
+            .email-newsletter a {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 28px;
+            }
+            .description-newsletter {
+                font-size: 18px;
+            }
+        }
+
+    }
+    #explore {
+        padding: 0 10px;
+        & > #first-explore,
+        & > #second-explore,
+        & > #third-explore {
+            width: 100%;
+        }
+    }
+   #guides {
+       & > div:first-of-type {
+           margin-bottom:  80px;
+       }
+   }
+
+   #all-guides {
+       #article-one {
+           & > p:first-of-type {
+            padding-left: 0;
+            padding-top: 40px;
+            padding-bottom: 25px;
+           }
+           & > p:last-of-type {
+               padding-left: 0;
+               line-height: 1em;
+           }
+           #article-header {
+                position: relative;
+                div {
+                    .categories {
+                        position: absolute;
+                        top: 12px;
+                        left: 100px;
+                    }
+                    h2 a {
+                        position: absolute;
+                        top: 75px;
+                        left: 0;
+                    }
+                }
+            }
+       }
+   }
+
+   #join #join-community {
+       margin: 0;
+       width: 100%;
+       padding-top: 120px;
+       img {
+           width: 240px;
+       }
+   }
+
+   #cat-guides {
+       #join {
+           margin: 0 20px;
+           grid-template-columns: repeat(5, 500px);
+        }
+
+   }
+
+   #persons {
+         padding: 70px 80px 0 40px;
+         .all-persons #article-one {
+             & > p {
+                padding-left: 0;
+                line-height: 1em;
+                padding-top: 40px;
+             }
+            #article-header {
+                position: relative;
+
+                h2 a {
+                   position: absolute;
+                   top: 75px;
+                   left: 0;
+                }
+                .categories {
+                    position: absolute;
+                    top: 12px;
+                    left: 100px;
+                }
+            }
+        }    
+         
+
+       .person-of-the-week {
+           flex-direction: column;
+           img {
+               width: 210px;
+               height: 210px;
+               margin-bottom: 20px;
+           }
+           p {
+               line-height: 22px;
+               font-size: 18px;
+           }
+       }
+   }
+   footer {
+       & > ul {
+           gap: 0;
+           padding: 0 150px 50px 50px;
+           height: 580px;
+           li {
+               padding: 0 120px 13px 0;
+           }
+       }
+       #contact {
+           flex-direction: column-reverse;
+           align-items: flex-start;
+           padding: 0;
+           .footer-img-cat-in-cage {
+               width: 180px;
+               height: auto;
+           }
+           div {
+               padding: 0 80px;
+           }
+       }
+   }
+
+
+
+
+
+
+
+
+}
+
 
 
