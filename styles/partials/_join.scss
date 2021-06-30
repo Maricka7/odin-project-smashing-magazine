@@ -3,20 +3,6 @@
     padding: 30px 40px;
     align-items: center;
     margin-bottom: 50px;
-    & > a {
-        display: inline-block;
-        position: relative;
-    }
-    & > a::before {
-        content: 'Our friends and supporters ↓';
-        text-align: center;
-        color: $grey;
-        display: inline-block;
-        padding-bottom: 10px;
-        position: absolute;
-        left: 38%;
-        top: 25px;
-    }
     #join-community {
         display: flex;
         flex-direction: column;
@@ -25,6 +11,7 @@
         border-radius: 10px;
         position: relative;
         margin: 0 50px;
+        width: 50%;
         & > a {
             display: inline-block;
             text-align: center;
@@ -75,13 +62,24 @@
     flex-direction: column;
     text-align: center;
     padding: 40px 15px 30px 15px;
-    width: 430px;
-    margin-right: 100px;
-    margin-left: 130px;
-    margin-top: 60px;
+    width: 400px;
+    margin-right: 50px;
+    margin-left: 50px;
     background-color: #2e0b2c;
     background-image: -webkit-linear-gradient(-64deg, #37153a 50%, #d994f5 50%);
     border-radius: 15px;
+    position: relative;
+    &::before {
+        content: 'Our friends and supporters ↓';
+        text-align: center;
+        color: $grey;
+        display: inline-block;
+        padding-bottom: 10px;
+        position: absolute;
+        left: 50%;
+        top: -25px;
+        transform: translateX(-50%);
+    }
     & > div {
         p {
             background-color: rgb(146, 11, 180);

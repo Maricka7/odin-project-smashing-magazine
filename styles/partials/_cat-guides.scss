@@ -6,6 +6,7 @@
     padding-left: 0;
     padding-top: 150px;
     overflow-x: scroll;
+    justify-content: flex-start;
     .one {
         background-color: rgb(235, 232, 232);
     }
@@ -31,6 +32,7 @@
         }
     }
     #join-community {
+        width: 100%;
         margin: 0;
         & > a {
             font-size: 20px;  

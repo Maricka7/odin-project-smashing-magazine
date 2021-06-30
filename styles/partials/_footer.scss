@@ -80,13 +80,19 @@ footer {
             } 
         } 
     }
-    img:first-of-type {
+    
+    .footer-img-bird {
         width: 200px;
         height: auto;
     }
-    img:last-of-type {
+    .footer-img-cat-in-cage {
+        width: 200px;
+        height: auto;
+    }
+    .footer-img-cat {
         width: 250px;
         height: auto;
         margin-bottom: 10px;
     }
+    
 }

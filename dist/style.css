@@ -18,13 +18,13 @@ nav {
   padding: 0 30px;
 }
 #navigation-list .input-one {
+  position: relative;
   width: 400px;
 }
 #navigation-list .input-one input {
   width: 100%;
   height: 60px;
   border-radius: 5px;
-  position: relative;
   padding-left: 35px;
   padding-top: 5px;
 }
@@ -32,8 +32,9 @@ nav {
   color: #555;
   font-size: 25px;
   position: absolute;
-  right: 400px;
-  top: 38px;
+  transform: translateY(-50%);
+  left: 5px;
+  top: 50%;
 }
 #navigation-list .input-one input::placeholder {
   color: #555;
@@ -272,13 +273,16 @@ nav {
   border-bottom-right-radius: 15px;
   border: transparent;
   background-color: #2f7cf0;
+  color: #fff;
+  font-weight: bold;
 }
 #email-aside img {
   width: 300px;
   height: auto;
   position: absolute;
-  top: -150px;
-  left: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -160px;
 }
 #email-aside h2 {
   font-size: 30px;
@@ -359,7 +363,6 @@ nav {
 }
 #explore #second-explore .explore-button {
   position: relative;
-  left: 60px;
   background-color: #d34040;
 }
 #explore #third-explore {
@@ -371,7 +374,6 @@ nav {
 #explore #third-explore .explore-button {
   width: 250px;
   position: relative;
-  left: 60px;
   background-color: #972197;
 }
 
@@ -448,7 +450,7 @@ nav {
   color: #555;
 }
 #all-guides #article-one p:last-of-type i {
-  color: #dee4f8;
+  color: #1bacf0;
 }
 #all-guides #article-one > p:first-of-type {
   padding-left: 130px;
@@ -485,20 +487,6 @@ nav {
   align-items: center;
   margin-bottom: 50px;
 }
-#join > a {
-  display: inline-block;
-  position: relative;
-}
-#join > a::before {
-  content: "Our friends and supporters ↓";
-  text-align: center;
-  color: #555;
-  display: inline-block;
-  padding-bottom: 10px;
-  position: absolute;
-  left: 38%;
-  top: 25px;
-}
 #join #join-community {
   display: flex;
   flex-direction: column;
@@ -507,6 +495,7 @@ nav {
   border-radius: 10px;
   position: relative;
   margin: 0 50px;
+  width: 50%;
 }
 #join #join-community > a {
   display: inline-block;
@@ -557,13 +546,24 @@ nav {
   flex-direction: column;
   text-align: center;
   padding: 40px 15px 30px 15px;
-  width: 430px;
-  margin-right: 100px;
-  margin-left: 130px;
-  margin-top: 60px;
+  width: 400px;
+  margin-right: 50px;
+  margin-left: 50px;
   background-color: #2e0b2c;
   background-image: -webkit-linear-gradient(-64deg, #37153a 50%, #d994f5 50%);
   border-radius: 15px;
+  position: relative;
+}
+#partners::before {
+  content: "Our friends and supporters ↓";
+  text-align: center;
+  color: #555;
+  display: inline-block;
+  padding-bottom: 10px;
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  transform: translateX(-50%);
 }
 #partners > div p {
   background-color: #920bb4;
@@ -636,6 +636,7 @@ nav {
   padding-left: 0;
   padding-top: 150px;
   overflow-x: scroll;
+  justify-content: flex-start;
 }
 #cat-guides #join .one {
   background-color: #ebe8e8;
@@ -662,6 +663,7 @@ nav {
   background-color: #d34040;
 }
 #cat-guides #join #join-community {
+  width: 100%;
   margin: 0;
 }
 #cat-guides #join #join-community > a {
@@ -724,7 +726,7 @@ nav {
   padding-bottom: 50px;
 }
 #boost-your-skills img {
-  width: 900px;
+  width: 80%;
 }
 #boost-your-skills img:hover,
 #boost-your-skills img:active {
@@ -789,6 +791,9 @@ nav {
 #persons .person-of-the-week img {
   width: 200px;
   margin-right: 30px;
+  border: 10px solid #1bacf0;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px 0px #9fa3ab;
 }
 #persons .person-of-the-week h2 {
   font-size: 17px;
@@ -904,14 +909,428 @@ footer > ul li::before {
 #contact div ul li a {
   color: #fff;
 }
-#contact img:first-of-type {
+#contact .footer-img-bird {
   width: 200px;
   height: auto;
 }
-#contact img:last-of-type {
+#contact .footer-img-cat-in-cage {
+  width: 200px;
+  height: auto;
+}
+#contact .footer-img-cat {
   width: 250px;
   height: auto;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  #navigation-list .hidden-1024 {
+    display: none;
+  }
+
+  #more {
+    margin-right: 10px;
+  }
+
+  #main {
+    flex-direction: column;
+    padding: 60px 50px 0 50px;
+  }
+  #main #email-aside {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #main #email-aside div {
+    justify-content: center;
+  }
+  #main #email-aside input {
+    width: 30%;
+    padding: 20px 15px 20px 15px;
+  }
+  #main #email-aside input::placeholder {
+    font-size: 17px;
+  }
+  #main #email-aside button {
+    width: 13%;
+  }
+
+  #article-one #article-header div {
+    flex-grow: 1;
+  }
+  #article-one #article-header div h2 a {
+    font-size: 38px;
+  }
+  #article-one #article-header div br {
+    display: none;
+  }
+  #article-one #article-header .categories {
+    padding-bottom: 0;
+  }
+
+  #article-two p,
+#article-three p {
+    padding-bottom: 20px;
+  }
+
+  #join {
+    flex-direction: column;
+  }
+
+  #explore {
+    flex-flow: wrap;
+  }
+  #explore #first-explore,
+#explore #second-explore,
+#explore #third-explore {
+    width: 48%;
+    flex-shrink: 0;
+  }
+  #explore #first-explore > .explore-button,
+#explore #second-explore > .explore-button,
+#explore #third-explore > .explore-button {
+    font-size: 20px;
+  }
+  #explore #first-explore h2 a,
+#explore #second-explore h2 a,
+#explore #third-explore h2 a {
+    font-size: 25px;
+  }
+  #explore #first-explore > p:last-of-type,
+#explore #second-explore > p:last-of-type,
+#explore #third-explore > p:last-of-type {
+    font-size: 22px;
+  }
+
+  #in-and-outside {
+    flex-direction: column;
+  }
+  #in-and-outside h4 {
+    writing-mode: horizontal-tb;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #in-and-outside h4 span {
+    height: 0;
+    margin-bottom: 5px;
+    width: 20%;
+    margin-right: 5px;
+    border-bottom: 2px solid #000;
+  }
+
+  #guides {
+    margin-bottom: 50px;
+  }
+  #guides > div:first-of-type {
+    margin-bottom: 60px;
+  }
+
+  #all-guides #article-one img {
+    width: 70px;
+    height: 70px;
+  }
+  #all-guides #article-one > p:first-of-type {
+    font-size: 20px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+  }
+  #all-guides #article-one > p:last-of-type {
+    padding-left: 104px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+  }
+  #all-guides #article-one #article-header div .categories {
+    margin-bottom: 5px;
+    font-size: 0.8em;
+  }
+  #all-guides #article-one #article-header div .categories a {
+    font-size: 1.3em;
+  }
+  #all-guides #article-one #article-header div h2 a {
+    width: 100%;
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  #join {
+    justify-content: center;
+  }
+  #join > a {
+    display: none;
+  }
+  #join #join-community {
+    padding-top: 150px;
+    align-items: center;
+    width: 70%;
+  }
+  #join #join-community img {
+    width: 270px;
+  }
+  #join #join-community p:first-of-type {
+    font-size: 18px;
+  }
+  #join #join-community h2 {
+    font-size: 28px;
+  }
+  #join #join-community > a {
+    margin: 0 0 20px 0;
+    width: 70%;
+    font-size: 24px;
+    padding: 10px 0;
+  }
+
+  #cat-guides #join {
+    justify-content: flex-start;
+  }
+  #cat-guides #join #join-community {
+    width: 85%;
+  }
+  #cat-guides #join #join-community h2 {
+    padding-bottom: 20px;
+  }
+  #cat-guides #join #join-community p {
+    padding-bottom: 20px;
+  }
+
+  #boost-your-skills h2 a {
+    padding-bottom: 30px;
+  }
+  #boost-your-skills > p:last-of-type {
+    padding: 0 80px 50px 80px;
+    font-size: 22px;
+  }
+
+  #persons {
+    padding-top: 30px;
+  }
+  #persons .all-persons #article-one > p {
+    font-size: 20px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+  }
+  #persons .all-persons #article-one > p span {
+    color: gray;
+  }
+  #persons .all-persons #article-one #article-header {
+    padding-bottom: 30px;
+  }
+  #persons .all-persons #article-one #article-header img {
+    width: 70px;
+    height: 70px;
+  }
+  #persons .all-persons #article-one #article-header h2 a {
+    width: 100%;
+    display: inline-block;
+    font-size: 24px;
+  }
+  #persons .all-persons #article-one #article-header div p {
+    padding-bottom: 0;
+  }
+  #persons .all-persons #article-one #article-header div .categories {
+    margin-bottom: 5px;
+    font-size: 0.8em;
+  }
+  #persons .all-persons #article-one #article-header div .categories a {
+    font-size: 1.3em;
+  }
+  #persons .person-of-the-week p {
+    font-size: 20px;
+  }
+  #persons > p:first-of-type {
+    writing-mode: horizontal-tb;
+    font-weight: normal;
+    font-size: 0.9em;
+    width: 100%;
+    position: static;
+    margin-bottom: 40px;
+  }
+  #persons > p:first-of-type span {
+    height: 0;
+    margin-bottom: 5px;
+    width: 15%;
+    margin-right: 5px;
+    border-bottom: 2px solid #000;
+  }
+
+  footer {
+    padding: 0;
+  }
+  footer > ul {
+    padding: 0 160px 50px 160px;
+    gap: 20px;
+  }
+  footer > ul li a {
+    font-size: 18px;
+  }
+  footer #contact div p {
+    display: inline-block;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 836px) {
+  #navigation-list .input-one input::placeholder {
+    color: transparent;
+  }
+
+  #contact div {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  #navigation-list .input-one input::placeholder {
+    color: #555;
+  }
+  #navigation-list #more.menu {
+    display: none;
+  }
+
+  footer .footer-img-cat-in-cage {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #navigation-list .hidden-768 {
+    display: none;
+  }
+  #navigation-list #more.more-one {
+    display: none;
+  }
+
+  #main {
+    align-items: center;
+  }
+  #main #email-aside {
+    width: 80%;
+  }
+  #main #email-aside input {
+    width: 50%;
+  }
+  #main #email-aside button {
+    width: 20%;
+  }
+
+  #explore #first-explore > .explore-button,
+#explore #second-explore > .explore-button,
+#explore #third-explore > .explore-button {
+    font-size: 18px;
+  }
+  #explore #first-explore h2 a,
+#explore #second-explore h2 a,
+#explore #third-explore h2 a {
+    font-size: 22px;
+  }
+  #explore #first-explore > p:last-of-type,
+#explore #second-explore > p:last-of-type,
+#explore #third-explore > p:last-of-type {
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  #all-guides {
+    margin-bottom: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #second-guides {
+    margin: 0 75px;
+  }
+  #second-guides #all-guides {
+    padding: 0;
+  }
+  #second-guides #all-guides #article-one {
+    padding-right: 0;
+  }
+
+  #smashing-family h2 {
+    font-size: 38px;
+  }
+  #smashing-family h3 {
+    font-size: 26px;
+  }
+
+  #cat-guides #join {
+    grid-template-columns: repeat(5, 560px);
+  }
+  #cat-guides #join #join-community {
+    flex-shrink: 0;
+    width: 100%;
+    padding-top: 130px;
+  }
+  #cat-guides #join #join-community img {
+    width: 250px;
+  }
+
+  #boost-your-skills > a {
+    font-size: 23px;
+  }
+  #boost-your-skills > p:last-of-type {
+    font-size: 20px;
+  }
+  #boost-your-skills h2 a {
+    font-size: 40px;
+  }
+
+  #persons {
+    padding: 70px 120px 0 70px;
+  }
+  #persons .person-of-the-week p {
+    line-height: 28px;
+  }
+  #persons .person-of-the-week h2 {
+    padding-bottom: 30px;
+  }
+  #persons .person-of-the-week img {
+    width: 250px;
+    height: 250px;
+  }
+  #persons .all-persons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #persons .all-persons #article-one > p {
+    font-size: 18px;
+    padding-bottom: 30px;
+    line-height: 30px;
+  }
+  #persons .all-persons #article-one #article-header {
+    padding-bottom: 10px;
+  }
+
+  footer > ul {
+    flex-direction: column;
+    height: 400px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 100px 50px 100px;
+  }
+  footer > ul li a {
+    font-size: 16px;
+  }
+  footer #contact {
+    padding-right: 170px;
+  }
+  footer #contact div ul {
+    padding-bottom: 23px;
+    gap: 10px;
+  }
+  footer #contact div ul li {
+    font-size: 15px;
+  }
+  footer #contact div ul li i {
+    font-size: 13px;
+  }
+  footer #contact .footer-img-cat,
+footer #contact .footer-img-bird {
+    display: none;
+  }
+  footer #contact p {
+    padding-bottom: 10px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  footer #contact p i {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
