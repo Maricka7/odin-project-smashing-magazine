@@ -533,7 +533,7 @@
        #article-one {
            & > p:first-of-type {
             padding-left: 0;
-            padding-top: 40px;
+            padding-top: 18%;
             padding-bottom: 25px;
            }
            & > p:last-of-type {
@@ -634,16 +634,192 @@
                padding: 0 80px;
            }
        }
-   }
+    }
 
+}
 
+@media screen and (max-width: 425px) {
+    #navigation-list {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 10px 10px;
+        height: 150px;
 
+        .hidden-425 {
+            display: none;
+        }
+        .input-one {
+            flex-shrink: 0;
+            width: 100%;
+            input {
+                height: 50px;
+                border-radius: 12px;
+            }
+        }
+    }
+    #main {
+        padding: 10px 20px 0 20px;
+        #article-list {
+            #article-one {
+                padding-bottom: 20px;
+                & > p {
+                    font-size: 17px;
+                    padding-bottom: 15px;
+                }
+                #article-header {
+                    padding-bottom: 15px;
+                    div {
+                        h2 a {
+                            font-size: 26px;
+                        }
+                    }
+                    .categories {
+                        padding-top: 15px;
+                        font-size: 15px;
+                        a {
+                            font-size: 15px;
+                        }
+                        #article-poster {
+                            font-size: 17px;
+                        }
+
+                    }
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
+            #article-two,
+            #article-three {
+                h2 a {
+                    font-size: 25px;
+                }
+                #article-poster {
+                        font-size: 16px;
+                }
+                img {
+                    width: 120px;
+                }
+                .categories {
+                    font-size: 15px;
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        #email-aside {
+            padding: 110px 20px 0 20px;
+            h2 {
+                font-size: 26px;
+                margin-bottom: 5px;
+            }
+            .email-newsletter a {
+                font-size: 21px;
+            }
+            .description-newsletter {
+                font-size: 16px;
+            }
+        }
+    }
+
+    #join {
+        #join-community {
+            padding: 90px 60px 0 60px;
+            & > a {
+                width: 85%;
+                font-size: 17px;
+            }
+            p:first-of-type {
+                font-size: 17px;
+                line-height: 20px;
+            }
+            h2 {
+                font-size: 25px;
+                padding-bottom: 30px;
+            }
+            img {
+                width: 200px;
+                top: -18%;
+            }
+        }
+    }
+    #second-guides {
+        margin: 0 30px;
+    }
+    .see-more {
+        margin-bottom: 60px;
+    }
+    #smashing-family {
+        margin-bottom: 20px;
+        h2 {
+            font-size: 30px;      
+        }
+        h3 {
+            font-size: 22px;
+        }
+    }
+    #cat-guides {
+        #join {
+            grid-template-columns: repeat(5, 370px);
+            #join-community {
+                img {
+                    width: 200px;
+                    top: -20%;
+                }
+            }
+        }
+    }
+    #boost-your-skills {
+        img {
+            width: 100%;
+        }
+        & > a {
+            font-size: 18px;
+        }
+        & > p:last-of-type {
+            padding: 0 0 50px 0;
+        }
+        h2 a {
+            font-size: 30px;
+        }
+    }
+    footer {
+        #contact {
+            div {
+                padding: 0 30px;
+                ul li {
+                    font-size: 14px;
+                }
+                p {
+                    font-size: 14px;
+                    a {
+                        font-size: 14px;
+                    }
+                    i {
+                    font-size: 14px;
+                    }
+                }
+            }
+        }
+        & > ul {
+            height: 450px;
+            li {
+                padding: 0px 60px 5px 0;
+                a {
+
+                }
+            }
+
+        }
+    }
 
 
 
 
 
 }
+
 
 
 

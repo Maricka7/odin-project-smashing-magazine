@@ -1417,7 +1417,7 @@ footer #contact .footer-img-bird {
 
   #all-guides #article-one > p:first-of-type {
     padding-left: 0;
-    padding-top: 40px;
+    padding-top: 18%;
     padding-bottom: 25px;
   }
   #all-guides #article-one > p:last-of-type {
@@ -1505,6 +1505,169 @@ footer #contact .footer-img-bird {
   }
   footer #contact div {
     padding: 0 80px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #navigation-list {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 10px 10px;
+    height: 150px;
+  }
+  #navigation-list .hidden-425 {
+    display: none;
+  }
+  #navigation-list .input-one {
+    flex-shrink: 0;
+    width: 100%;
+  }
+  #navigation-list .input-one input {
+    height: 50px;
+    border-radius: 12px;
+  }
+
+  #main {
+    padding: 10px 20px 0 20px;
+  }
+  #main #article-list #article-one {
+    padding-bottom: 20px;
+  }
+  #main #article-list #article-one > p {
+    font-size: 17px;
+    padding-bottom: 15px;
+  }
+  #main #article-list #article-one #article-header {
+    padding-bottom: 15px;
+  }
+  #main #article-list #article-one #article-header div h2 a {
+    font-size: 26px;
+  }
+  #main #article-list #article-one #article-header .categories {
+    padding-top: 15px;
+    font-size: 15px;
+  }
+  #main #article-list #article-one #article-header .categories a {
+    font-size: 15px;
+  }
+  #main #article-list #article-one #article-header .categories #article-poster {
+    font-size: 17px;
+  }
+  #main #article-list #article-one #article-header img {
+    width: 150px;
+  }
+  #main #article-list #article-two h2 a,
+#main #article-list #article-three h2 a {
+    font-size: 25px;
+  }
+  #main #article-list #article-two #article-poster,
+#main #article-list #article-three #article-poster {
+    font-size: 16px;
+  }
+  #main #article-list #article-two img,
+#main #article-list #article-three img {
+    width: 120px;
+  }
+  #main #article-list #article-two .categories,
+#main #article-list #article-three .categories {
+    font-size: 15px;
+  }
+  #main #article-list #article-two .categories a,
+#main #article-list #article-three .categories a {
+    font-size: 16px;
+  }
+  #main #email-aside {
+    padding: 110px 20px 0 20px;
+  }
+  #main #email-aside h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+  #main #email-aside .email-newsletter a {
+    font-size: 21px;
+  }
+  #main #email-aside .description-newsletter {
+    font-size: 16px;
+  }
+
+  #join #join-community {
+    padding: 90px 60px 0 60px;
+  }
+  #join #join-community > a {
+    width: 85%;
+    font-size: 17px;
+  }
+  #join #join-community p:first-of-type {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  #join #join-community h2 {
+    font-size: 25px;
+    padding-bottom: 30px;
+  }
+  #join #join-community img {
+    width: 200px;
+    top: -18%;
+  }
+
+  #second-guides {
+    margin: 0 30px;
+  }
+
+  .see-more {
+    margin-bottom: 60px;
+  }
+
+  #smashing-family {
+    margin-bottom: 20px;
+  }
+  #smashing-family h2 {
+    font-size: 30px;
+  }
+  #smashing-family h3 {
+    font-size: 22px;
+  }
+
+  #cat-guides #join {
+    grid-template-columns: repeat(5, 370px);
+  }
+  #cat-guides #join #join-community img {
+    width: 200px;
+    top: -20%;
+  }
+
+  #boost-your-skills img {
+    width: 100%;
+  }
+  #boost-your-skills > a {
+    font-size: 18px;
+  }
+  #boost-your-skills > p:last-of-type {
+    padding: 0 0 50px 0;
+  }
+  #boost-your-skills h2 a {
+    font-size: 30px;
+  }
+
+  footer #contact div {
+    padding: 0 30px;
+  }
+  footer #contact div ul li {
+    font-size: 14px;
+  }
+  footer #contact div p {
+    font-size: 14px;
+  }
+  footer #contact div p a {
+    font-size: 14px;
+  }
+  footer #contact div p i {
+    font-size: 14px;
+  }
+  footer > ul {
+    height: 450px;
+  }
+  footer > ul li {
+    padding: 0px 60px 5px 0;
   }
 }
 
